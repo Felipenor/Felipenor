@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipenor - YouTuber, Programador Web, Dev Flutter e Streamer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (ícones do footer) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
+        .animate-slide-in { animation: slideIn 0.6s ease-out forwards; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .glow-heading {
+            position: relative; display: inline-block; z-index: 1; padding: 6px 10px; border-radius: 10px;
+        }
+        .glow-heading::before {
+            content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+            width: calc(100% + 48px); height: calc(100% + 16px);
+            background: linear-gradient(90deg, rgba(6,182,212,0.75) 0%, rgba(124,58,237,0.75) 100%);
+            filter: blur(14px); opacity: 0.7; border-radius: 14px; z-index: -1; pointer-events: none;
+        }
+
+        .brand-button {
+            display: inline-block; padding: 8px 14px; border-radius: 12px; color: #06b6d4; font-weight: 800;
+            text-decoration: none; border: 1px solid rgba(6,182,212,0.16);
+            background: linear-gradient(90deg, rgba(6,182,212,0.04), rgba(124,58,237,0.02));
+            box-shadow: 0 8px 24px rgba(6,182,212,0.08), inset 0 -2px 6px rgba(0,0,0,0.06);
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease; line-height: 1;
+        }
+        .brand-button:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(6,182,212,0.14); }
+        .brand-button:active { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(6,182,212,0.08); }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white antialiased">
+        <!-- Header -->
+        <header class="container mx-auto px-6 py-8 flex items-center justify-between flex-wrap gap-4">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-violet-500 flex items-center justify-center shadow-2xl">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimcI6noK5T8fmHNj3vHVltdG_Do9q-jIJJIFG4GWVpHEgn-W99pkwpkkgzYjVzV-r2173_JwCAXH4yfe_c5-tnERreWNLf0A8SAbQxO45m8TiG1T0gWEvhatt3w1bCeTRuqg_WggHC_bdHGwEt4YU0h5w6AMsBAbvBcZfufzOxax4Iuh772pIyGWDFBQaE/s320/felipenor-profile.png" alt="Felipenor" class="w-10 h-10 rounded-full object-cover">
+                </div>
+                <div>
+                    <a href="https://linkr.bio/felipenor" target="_blank" class="brand-button text-xl" title="Apoie o Felipenor">Felipenor</a>
+                    <p class="text-sm text-slate-300">YouTuber • Programador Web • Dev Flutter (Apps) • Streamer (VTuber) • Compositor Musical • WebMaster</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a href="#doa" class="bg-gradient-to-r from-cyan-400 to-red-500 text-slate-900 px-4 py-2 rounded-lg font-semibold shadow-lg hover:shadow-xl transition">Doar</a>
+                <a href="https://linkr.bio/Felipenor" target="_blank" rel="noreferrer" class="text-slate-300 hover:underline">Ver todos os links</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-6 py-12">
+            <!-- Hero Section -->
+            <section class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="animate-slide-in">
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight glow-heading">
+                        <a href="#doa" class="inline-block">
+                            Apoie o sonho do <span class="text-cyan-400">Felipenor</span>
+                        </a>
+                    </h2>
+
+                    <p class="mt-4 text-slate-300 max-w-xl">
+                        Olá — prazer, me chamo <strong>Felipenor</strong>.
+                        Sou YouTuber, Programador, Desenvolvedor de Sites e <strong>Aplicativos em Flutter</strong>,
+                        Streamer (VTuber), Compositor Musical, Blogueiro e Webmaster.
+                        Aqui você encontra meus projetos, loja e formas de me apoiar para alcançar o sonho da casa própria.
+                    </p>
+
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="https://twitch.tv/felipenor" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-gradient-to-r from-red-500 to-pink-500 font-semibold text-slate-900 shadow-lg hover:shadow-xl transition">
+                            Assista na Twitch
+                        </a>
+
+                        <a href="https://linkr.bio/Felipenor" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-4 py-3 rounded-lg border border-slate-700 text-slate-200 hover:bg-slate-800 transition">
+                            Meus Links (linkr.bio)
+                        </a>
+
+                        <!-- Botão de download do FollowUp -->
+                        <a href="https://felipenor.github.io/followup" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-gradient-to-r from-cyan-400 to-green-400 font-semibold text-slate-900 shadow-lg hover:shadow-xl transition">
+                            Baixar o App FollowUp
+                        </a>
+
+                        <!-- Novo botão: Criação de Apps Android -->
+                        <a href="https://felipenor.github.io/criacaodeapps" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-gradient-to-r from-green-400 to-cyan-400 font-semibold text-slate-900 shadow-lg hover:shadow-xl transition">
+                            Criação de Apps Android
+                        </a>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl">
+                        <div class="p-4 rounded-lg bg-slate-800/60">
+                            <h4 class="font-bold">Principais Sites</h4>
+                            <ul class="text-sm text-slate-300 mt-2 list-disc list-inside space-y-1">
+                                <li><a href="https://helptuber.epizy.com" target="_blank" rel="noreferrer" class="hover:underline hover:text-cyan-400">HelpTuber</a></li>
+                                <li><a href="https://habbobluehost.com" target="_blank" rel="noreferrer" class="hover:underline hover:text-cyan-400">Habbo Blue Host</a></li>
+                                <li><a href="https://freelancejob.rf.gd" target="_blank" rel="noreferrer" class="hover:underline hover:text-cyan-400">Freelance Job</a></li>
+                                <li><a href="https://felipenor-shop.fourthwall.com" target="_blank" rel="noreferrer" class="hover:underline hover:text-cyan-400">Minha Loja de Camisetas</a></li>
+                                <li><a href="https://felipenor.free.nf" target="_blank" rel="noreferrer" class="hover:underline hover:text-cyan-400">Meu Portfólio</a></li>
+                                <li><a href="https://felipenordesenvolvedor.epizy.com" target="_blank" rel="noreferrer" class="hover:underline hover:text-cyan-400">Felipenor Desenvolvedor</a></li>
+                                <li><a href="https://felipenor.github.io/followup" target="_blank" rel="noreferrer" class="hover:underline hover:text-cyan-400">FollowUp (app Flutter)</a></li>
+                                <li><a href="https://felipenor.github.io/criacaodeapps" target="_blank" rel="noreferrer" class="hover:underline hover:text-cyan-400">Criação de Apps Android</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-fade-in flex justify-center md:justify-end">
+                    <div class="w-80 h-80 rounded-2xl bg-gradient-to-br from-slate-700/60 to-slate-900 p-6 shadow-2xl flex items-center justify-center">
+                        <div class="w-64 h-64 rounded-xl bg-gradient-to-br from-cyan-400/20 to-violet-500/10 border border-slate-700 flex items-center justify-center">
+                            <div class="text-center">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQwzN5gwqunN0zoAtdNGBu9pPo1c4VZvV_3XxD8QMoOfPJ_474zbFzE99OX7BYXA3eQ3ZIuI4jM62TU9T-77kK1XJVvBMpKWhHQci30YSZb8U3H-r1BNNG601hH_izGukwXtBetQlmYGphxw-zx5ysl-rsX5z8eydsJLVbj4oLRru_pd3mRu9oYQqJj_r5/s1536/1814509803.png" alt="Felipenor avatar" class="w-40 h-40 rounded-full object-cover mx-auto shadow-lg">
+                                <p class="text-slate-300 mt-3 text-sm">Felipenor — streamer, dev Flutter e criador de conteúdo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Links Section -->
+            <section id="links" class="mt-16">
+                <h3 class="text-2xl font-bold">Links Rápidos</h3>
+                <p class="mt-2 text-slate-400">Acesse meus principais sites e redes abaixo — para a lista completa, clique em "Ver todos os links" no cabeçalho.</p>
+
+                <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <a href="https://twitch.tv/felipenor" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Twitch</h4>
+                        <p class="text-sm text-slate-300 mt-1">Assista às lives e apoie o canal.</p>
+                    </a>
+
+                    <a href="https://linkr.bio/Felipenor" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Linkr.bio</h4>
+                        <p class="text-sm text-slate-300 mt-1">Todos os meus links em um só lugar.</p>
+                    </a>
+
+                    <a href="https://helptuber.epizy.com" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">HelpTuber</h4>
+                        <p class="text-sm text-slate-300 mt-1">Meu projeto de suporte para criadores.</p>
+                    </a>
+
+                    <a href="https://habbobluehost.com" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Habbo Blue Host</h4>
+                        <p class="text-sm text-slate-300 mt-1">Hospedagem e serviços relacionados.</p>
+                    </a>
+
+                    <a href="https://freelancejob.rf.gd" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Freelance Job</h4>
+                        <p class="text-sm text-slate-300 mt-1">Oportunidades para freelancers.</p>
+                    </a>
+
+                    <a href="https://felipenor.free.nf" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Meu Portfólio</h4>
+                        <p class="text-sm text-slate-300 mt-1">Confira meus projetos como desenvolvedor.</p>
+                    </a>
+
+                    <!-- Cartão do app FollowUp -->
+                    <a href="https://felipenor.github.io/followup" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">FollowUp — Meu App (Flutter)</h4>
+                        <p class="text-sm text-slate-300 mt-1">Baixe/acesse o FollowUp — app que desenvolvi com Flutter para ganhar seguidores e diamantes.</p>
+                    </a>
+
+                    <a href="https://felipenordesenvolvedor.epizy.com" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Felipenor Desenvolvedor</h4>
+                        <p class="text-sm text-slate-300 mt-1">Visite meu site de desenvolvimento e serviços.</p>
+                    </a>
+
+                    <!-- Novo: Landing pages de vendas -->
+                    <a href="https://felipenor.github.io/paginadevendas" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Landing Page - Páginas de Vendas</h4>
+                        <p class="text-sm text-slate-300 mt-1">Precisa de um site para seu produto ou serviço mas não sabe criar? Clique e solicite sua landing page profissional.</p>
+                    </a>
+
+                    <!-- Novo: Criação de música -->
+                    <a href="https://felipenor.github.io/suamusica" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Criação de Música — Felipenor & Lucas</h4>
+                        <p class="text-sm text-slate-300 mt-1">Encomende uma música personalizada por apenas R$55. Produção feita por Felipenor e Lucas para projetos.</p>
+                    </a>
+
+                    <!-- Novo: Criação de Apps Android -->
+                    <a href="https://felipenor.github.io/criacaodeapps" target="_blank" rel="noreferrer" class="p-4 rounded-lg bg-slate-800/40 hover:scale-105 transition transform">
+                        <h4 class="font-semibold">Criação de Apps Android</h4>
+                        <p class="text-sm text-slate-300 mt-1">Solicite o desenvolvimento do seu aplicativo Android personalizado com Felipenor.</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Donation Section -->
+            <section id="doa" class="mt-16">
+                <h3 class="text-2xl font-bold">Faça uma doação</h3>
+                <p class="mt-3 text-slate-300 max-w-2xl">Se você acredita no meu trabalho e quer me apoiar, pode contribuir via PayPal ou Pix. Toda ajuda vai diretamente para o sonho de conquistar minha casa própria — e também para melhorias no canal, compra de equipamento e criação de conteúdo.</p>
+
+                <div class="mt-6 flex flex-col md:flex-row gap-6">
+                    <a
+                        href="https://www.paypal.com/donate?business=felipeczs41@gmail.com&currency_code=BRL"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="px-6 py-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-900 font-semibold rounded-lg shadow-lg text-center hover:shadow-2xl transition"
+                    >
+                        Doar via PayPal
+                    </a>
+
+                    <a
+                        href="https://livepix.gg/felipenor"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="px-6 py-4 bg-gradient-to-r from-red-500 to-pink-500 text-slate-900 font-semibold rounded-lg shadow-lg text-center hover:shadow-2xl transition"
+                    >
+                        Doar via Pix (LivePix)
+                    </a>
+
+                    <a
+                        href="https://linkr.bio/Felipenor"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="px-6 py-4 border border-slate-700 rounded-lg text-slate-200 font-semibold text-center hover:bg-slate-800 transition"
+                    >
+                        Doe qualquer valor (ver opções no Linkr)
+                    </a>
+                </div>
+
+                <p class="text-slate-400 text-sm mt-4">PIX: disponível via LivePix — abra o link e siga as instruções. PayPal: felipeczs41@gmail.com</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer border-t border-slate-800 py-6 mt-16">
+            <div class="container mx-auto px-6">
+                <div class="elementor-widget-wrap">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-text-editor elementor-clearfix flex flex-col md:flex-row items-center justify-between gap-4">
+                            <a class="text-logo" href="#" data-type="group" data-dynamic-mod="true" rel="noopener noreferrer">
+                                <span class="span12" style="font-weight: 300;"><img src="https://habbofont.net/font/plastic_playful/Felipenor.gif" alt="UmPequenoPortifolioMeu" class="h-8"></span>
+                            </a>
+
+                            <div class="text-center md:text-left">
+                                <h3 class="text-lg font-semibold text-slate-200">Me siga nas minhas redes</h3>
+                                <div class="footer-social-icons flex items-center gap-3 mt-2" data-type="group" data-dynamic-mod="true">
+                                    <a class="social-icon text-slate-300 hover:text-cyan-400 text-xl" href="https://facebook.com/felipenorlipe" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-official"></i></a>
+                                    <a class="social-icon text-slate-300 hover:text-cyan-400 text-xl" href="https://x.com/FelipenorWooz" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square"></i></a>
+                                    <a class="social-icon text-slate-300 hover:text-cyan-400 text-xl" href="https://instagram.com/felipenor_wooz" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                                    <a class="social-icon text-slate-300 hover:text-cyan-400 text-xl" href="https://twitch.tv/felipenor" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitch"></i></a>
+                                    <a class="social-icon text-slate-300 hover:text-cyan-400 text-xl" href="https://youtube.com/@Felipenor" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-square"></i></a>
+                                </div>
+                            </div>
+
+                            <p class="text-slate-400 text-sm text-center md:text-right">© <span id="year"></span> Um Pequeno Portfólio Meu. Criado por <a href="https://linkr.bio/Felipenor" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Felipenor</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-slate-500 text-sm text-center mt-6">
+                    <small>Links e nomes podem ser atualizados a qualquer momento.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+<html>
+<head>
+<title>Exemplo de Pop-up com Vídeo do YouTube</title>
+<style>
+#video-popup {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+#video-popup iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #332f2f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transition: all 0.3s ease;
+}
+.close-btn:hover {
+  background-color: #ff4444;
+  transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+<div id="video-popup">
+<button class="close-btn" id="close-btn">X</button>
+<iframe id="video-iframe" frameborder="0" allowfullscreen></iframe>
+</div>
+<script>
+var videos = [
+  "l9jGey2tVd8",
+  "QQWM2BujAaQ",
+  "IGSyLs07wgc",
+  "0zegJXs8I0k",
+  "2DXvEutCUJ0",
+  "ZgOYrcSPTLk",
+  "lXqGlXhwi_4",
+  "8C3PuYuJxHI",
+  "3pbGsdvg--4",
+  "ElWyIQs3d64",
+  "6HqJH8Vf0IA",
+  "Z56VyICr_gs",
+  "6myOmfCcwv4",
+  "HRRRUHbg4ps",
+  "6MGTta1Yxf4",
+  "SHe49S7lpvs",
+  "LdcMtSvQyDM",
+  "ydo0HYPBitM",
+  "E79Ggli3a30",
+  "X48NsvjOEC8",
+  "EL99ePChnG4",
+  "r65hBefPMFA",
+  "aW-eaYPKbTw",
+  "-06RnQ4hF4o",
+  "g6HYnyMCxYI",
+];
+
+var video = videos[Math.floor(Math.random() * videos.length)];
+var videoUrl = "https://www.youtube.com/embed/" + video + "?autoplay=1&mute=1";
+
+var popup = document.getElementById("video-popup");
+var iframe = document.getElementById("video-iframe");
+var closeButton = document.getElementById("close-btn");
+iframe.src = videoUrl;
+
+window.addEventListener("load", function() {
+  popup.style.display = "block";
+});
+
+closeButton.addEventListener("click", function() {
+  popup.style.display = "none";
+  window.open(videoUrl, "_blank");
+});
+
+iframe.addEventListener("ended", function() {
+  video = videos[Math.floor(Math.random() * videos.length)];
+  videoUrl = "https://www.youtube.com/embed/" + video + "?autoplay=1&mute=1";
+  iframe.src = videoUrl;
+});
+</script>
+</body>
+</html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 252, 252, 0.8); /* Cor ciano com transparência */
+      padding: 20px;
+      color: white; /* Altera a cor do texto para branco */
+      z-index: 999; /* Garante que o pop-up esteja acima de outros elementos */
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 998; 
+    }
+
+    .close {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 30px; 
+      cursor: pointer;
+      color: white; 
+      background-color: red; 
+      padding: 5px 10px; 
+      font-weight: bold; 
+    }
+  </style>
+  <title>Pop-up</title>
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <span class="close" id="close">&times;</span>
+    <h3>Inscreva-se No Meu Canal Do YouTube</h3>
+    <div id="___ytsubscribe_0" style="text-indent: 0px; ... ... margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 167px; height: 48px;">
+      <iframe ... ... ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 167px; margin: 0px; border-style: none; left: 0px; ... ... visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1698607711535" name="I0_1698607711535" ... ... src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UC3THqpLnrmjAnVJ93MaGfZw&amp;layout=full&amp;count=default&amp;origin=https%3A%2F%2Ffelipenordesenvolvedor.epizy.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.pt_BR.QGnElhmNq_g.O%2Fd%3D1%2Frs%3DAHpOoo9sYmUA9Em_tDOz-9hNXbfp8V_wsQ%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1698607711535&amp;_gfid=I0_1698607711535&amp;parent=https%3A%2F%2Ffelipenordesenvolvedor.epizy.com&amp;pfname=&amp;rpctoken=15504248" ... ... data-gapiattached="true"></iframe>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var popup = document.getElementById('popup');
+      var overlay = document.getElementById('overlay');
+      var close = document.getElementById('close');
+
+      function openPopup() {
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+      }
+
+      function closePopup() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+      }
+
+      overlay.addEventListener('click', closePopup);
+      close.addEventListener('click', closePopup);
+
+      openPopup(); // Chama a função para abrir o pop-up
+    });
+  </script>
+</body>
+</html>
